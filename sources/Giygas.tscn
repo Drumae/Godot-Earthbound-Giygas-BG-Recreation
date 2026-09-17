@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://bg50vxu0ot15d"]
+
+[ext_resource type="Material" uid="uid://d06keh0w7i8p2" path="res://materials/giygas.tres" id="1_4ot5q"]
+[ext_resource type="Material" uid="uid://b2i5pckfhypor" path="res://materials/giygas2.tres" id="1_e86hp"]
+[ext_resource type="Texture2D" uid="uid://wbwgefsvmke6" path="res://sprites/giygas.png" id="2_g6l6a"]
+[ext_resource type="Script" uid="uid://s11ec37p70w" path="res://sources/giygas.gd" id="3_htvdi"]
+[ext_resource type="Texture2D" uid="uid://beg6g27puvbmi" path="res://sprites/giygas2.png" id="4_4ot5q"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kbped"]
+
+[node name="Shader" type="Control"]
+texture_repeat = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background Color" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_kbped")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Giygas2" type="TextureRect" parent="."]
+texture_filter = 1
+texture_repeat = 2
+material = ExtResource("1_e86hp")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_4ot5q")
+script = ExtResource("3_htvdi")
+
+[node name="Giygas" type="TextureRect" parent="."]
+texture_filter = 1
+texture_repeat = 2
+material = ExtResource("1_4ot5q")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_g6l6a")
+script = ExtResource("3_htvdi")

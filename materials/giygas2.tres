@@ -1,0 +1,11 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://b2i5pckfhypor"]
+
+[ext_resource type="Shader" uid="uid://bf6lf8dc5w3x" path="res://materials/shaders/giygas2.gdshader" id="1_5xqhj"]
+
+[resource]
+shader = ExtResource("1_5xqhj")
+shader_parameter/a = 0
+shader_parameter/b = 12.5
+shader_parameter/c = 2.0
+shader_parameter/d = 1.85
+shader_parameter/v_osc = false
